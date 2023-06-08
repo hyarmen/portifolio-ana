@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Roboto:wght@300&display=swap');
+
+:root {
+  font-size: 62.5%;
+  --fira-code: 'Fira Code', monospace;
+  --roboto-mono: 'Roboto', sans-serif;
+
+  --bg-page: #09090A;
+  --bg-nav: #3a53e3;
+  --bg-sobre: #f8cd53;
+  --bg-footer: #29282b;
+  --bg-nav-hover: #ffc93f;
+
+  --font-padrao: #000;
+  --font-nav: #fff;
+  --font-by:orange;
+  --font-button-hover:#e6af25;
+
+  --cor-sombra: #C0C0C0;
+  --cor-sombra-hover: #191970;
+  --cor-button-hover: #191970;
+  --cor-placeholder-effect: #191970;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-page);
+}
+
+.titulo {
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
+  font-family: var(--fira-code);
+  margin-right: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  color: #e6af25;
+}
+
+.titulo::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--bg-page);
+  border-left: 2px solid #e6af25;
+  animation: blinkCursor 700ms infinite normal, typing 6s steps(40) 1s normal both;
+}
+
+@keyframes typing {
+  100%{
+    left: 90%;
+  
+  }
+}
+
+@keyframes blinkCursor {
+  from{
+    border-left: 2px solid #e6af25;
+  }
+  to{
+    border-left: transparent;
+  }
+}
+
+.menu{
+  display: flex;
+  justify-content: center;
+  background-color: #e6af25;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(20, 15, 2);
+}
+
+a:visited{
+  color: black;
+}
+
+li {
+  display: inline;
+  padding: 8px 50px;
+  font-size: 2rem;
+  font-family: var(--fira-code);
+  margin: 0;
+  transition: all 200ms ease-in-out;
+}
+
+li:hover {
+  background-color: var(--bg-nav-hover);
+  padding: 8px 50px;
+  margin: 0;
+}
+
+footer p{
+  color: #f8cd53;
+  font-family: var(--fira-code);
+  font-size: 1.2rem;
+}
+
+footer img {
+  vertical-align: text-bottom;
+}
+
+footer a {
+  font-family: var(--roboto-mono);
+  color: #e6af25;
+  font-size: 1.5rem;
+}
+
+footer div {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  background-color: #2F2E41;
+  padding: 50px;
+}

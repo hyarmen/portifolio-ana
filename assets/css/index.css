@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Roboto:wght@300&display=swap');
+
+:root {
+  font-size: 62.5%;
+  --fira-code: 'Fira Code', monospace;
+  --roboto-mono: 'Roboto', sans-serif;
+}
+
+div.sec1 {
+  display: flex;
+  justify-content: center;
+}
+
+p.intro {
+  text-align: left;
+  font-size: 4rem;
+  margin: 30px 35px 0 30px;
+  background: #e6af25;
+  padding: 30px;
+  font-family: var(--fira-code);
+  border-radius: 5px;
+}
+
+img.heart {
+  width: 30rem;
+  padding: 10px 30px 10px 60px;
+  margin: 30px 100px 0 0;
+}
+
+div.sec2 {
+  display: flex;
+  justify-content: center;
+}
+
+img.study {
+  width: 30rem;
+  padding: 10px 60px 10px 30px;
+  margin: 30px 0 0 100px;
+}
+
+p.tec {
+  text-align: right;
+  font-size: 4rem;
+  margin: 30px 30px 0 35px;
+  background: #e6af25;
+  padding: 30px;
+  font-family: var(--fira-code);
+  border-radius: 5px;
+}
+p.tec img {
+  width: 60px;
+}
+
+div.sec3 {
+  display: flex;
+  justify-content: center;
+}
+
+p.plano {
+  text-align: left;
+  font-size: 4rem;
+  margin: 30px 35px 0 30px;
+  background: #e6af25;
+  padding: 30px;
+  font-family: var(--fira-code);
+  border-radius: 5px;
+}
+
+p.plano img {
+  width: 60px;
+}
+
+img.planning {
+  width: 30rem;
+  padding: 10px 30px 10px 60px;
+  margin: 30px 100px 0 0;
+}
