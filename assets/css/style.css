@@ -22,6 +22,8 @@
   --cor-placeholder-effect: #191970;
 }
 
+/*Estilo Geral com Header e Footer*/
+
 * {
   margin: 0;
   padding: 0;
@@ -78,17 +80,18 @@ body {
   background-color: #e6af25;
 }
 
-a{
+a.menuHeader{
   text-decoration: none;
   color: rgb(20, 15, 2);
 }
 
-a:visited{
+a.menuHeader:visited{
   color: black;
 }
 
-li {
-  display: inline;
+.menu li{
+  display: flex;
+  flex-direction: row;
   padding: 8px 50px;
   font-size: 2rem;
   font-family: var(--fira-code);
@@ -96,7 +99,7 @@ li {
   transition: all 200ms ease-in-out;
 }
 
-li:hover {
+.menu li:hover {
   background-color: var(--bg-nav-hover);
   padding: 8px 50px;
   margin: 0;
@@ -116,19 +119,190 @@ footer a {
   font-family: var(--roboto-mono);
   color: #e6af25;
   font-size: 1.5rem;
+  text-decoration: none;
 }
 
 footer div {
-  display: flex;
   gap: 10px;
   margin-bottom: 10px;
 }
 
 footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-top: 20px;
   background-color: #2F2E41;
   padding: 50px;
+}
+
+/*Estilo página Home*/
+
+div.container-home {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
+p.intro {
+  text-align: left;
+  font-size: 4rem;
+  margin: 30px 35px 0 30px;
+  background: #e6af25;
+  padding: 30px;
+  font-family: var(--fira-code);
+  border-radius: 5px;
+}
+
+img.heart {
+  width: 30rem;
+  padding: 10px 30px 10px 60px;
+  margin: 30px 100px 0 0;
+}
+
+img.study {
+  width: 30rem;
+  padding: 10px 60px 10px 30px;
+  margin: 30px 0 0 100px;
+}
+
+p.tec {
+  text-align: right;
+  font-size: 4rem;
+  margin: 30px 30px 0 35px;
+  background: #e6af25;
+  padding: 30px;
+  font-family: var(--fira-code);
+  border-radius: 5px;
+}
+
+p.tec img {
+  width: 60px;
+}
+
+p.plano {
+  text-align: left;
+  font-size: 4rem;
+  margin: 30px 35px 0 30px;
+  background: #e6af25;
+  padding: 30px;
+  font-family: var(--fira-code);
+  border-radius: 5px;
+}
+
+p.plano img {
+  width: 60px;
+}
+
+img.planning {
+  width: 30rem;
+  padding: 10px 30px 10px 60px;
+  margin: 30px 100px 0 0;
+}
+
+/*Estilo página Sobre*/
+
+h1.tituloSobre {
+  font-size: 4rem;
+  text-align: center;
+  font-family: var(--fira-code);
+  color: #e6af25;
+  margin: 10px 0;
+}
+
+img.aboutMe {
+  width: 30rem;
+  display: block;
+  margin: 1.8rem auto;
+}
+
+div.sobreParagrafos{
+  font-size: 1.7rem;
+  font-family: var(--roboto-mono);
+  padding: 10px 0;
+  text-align: center;
+  margin: 0 100px;
+  color: #09090A;
+  background: #e6af25;
+  line-height: 2;
+}
+
+div p a.rpg-link  {
+  color: #FEF08A;
+}
+
+.rpg-link:hover {
+  color: #CA8A04;
+}
+
+.foto-ana {
+  display: flex;
+  margin: 30px auto;
+  border: 5px solid #e6af25;
+  border-radius: 100%;
+}
+
+/*Estilo da Página Contatos*/
+
+h1.tituloContato {
+  font-size: 3rem;
+  text-align: center;
+  font-family: var(--fira-code);
+  color: #e6af25;
+  margin: 10px 0;
+  font-weight: 300;
+}
+
+.label-title {
+  color: #e6af25;
+  font-family: var(--roboto-mono);
+  font-size: 1.5rem;
+}
+
+.contato-email, .contato-linkedin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background: #e6af25;
+  margin: 1rem 40rem;
+  border-radius: 5px;
+  font-family: var(--fira-code);
+}
+
+.contato-linkedin a {
+  text-decoration: none;
+  color: rgb(20, 15, 2);
+}
+
+div.contato-email p, div.contato-linkedin a {
+  font-size: 2rem;
+}
+
+img.mail-img, img.linkedin-img {
+  width: 5rem;
+}
+
+img.img-contato {
+  display: block;
+  margin: 0 10rem;
+  width: 70rem;
+}
+
+.contatoSec2 p {
+  font-family: var(--roboto-mono);
+  font-size: 1rem;
+  color: #e6af25;
+  font-weight: 300;
+  margin: 0.3rem;
+}
+
+iframe.maps {
+  margin: 1rem;
+  width: 50rem;
+  height: 29rem;
+  border-radius: 5px;
+}
+
+.txt {
+  font-family: var(--roboto-mono);
+  font-size: 1.2rem;
 }

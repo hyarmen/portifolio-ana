@@ -15,14 +15,50 @@
     </div>
 
     <ul class="menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="sobre.html">Sobre</a></li>
-      <li><a href="projetos.html">Projetos</a></li>
-      <li><a href="contato.html">Contatos</a></li>
+      <li><a class="menuHeader" href="index.html">Home</a></li>
+      <li><a class="menuHeader" href="sobre.html">Sobre</a></li>
+      <li><a class="menuHeader" href="projetos.html">Projetos</a></li>
+      <li><a class="menuHeader" href="contato.html">Contatos</a></li>
     </ul>
   </nav>
 
-  <h1>Entre em contato comigo</h1>
+  
+
+  <div class="container-home">
+    <div>
+      <h1 class="tituloContato">Entre em contato comigo</h1>
+      <form>
+    <div>
+      <label class="label-title" for="nome">Nome:</label><br>
+      <input type="text" id="nome" onkeyup="validaNome()">
+    </div>
+    <div id="txt-nome" class="txt"></div>
+    <br>
+    <div>
+      <label class="label-title" for="email">Email:</label><br>
+      <input type="email" id="email" onkeyup="validaEmail()">
+    </div>
+    <div id="txt-email" class="txt"></div>
+    <br>
+    <div>
+      <label class="label-title" for="assunto">Assunto:</label><br>
+      <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
+    </div>
+    <br>
+    <button>Enviar</button>
+  </form>
+    </div>
+    <div>
+      <section class="contatoSec2">
+        <p>Rua Eugênio de Medeiros - Pinheiros</p>
+        <p>São Paulo - SP</p>
+        <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.988253390224!2d-46.703252825265075!3d-23.56886536186683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce573c0ad9df95%3A0x7d9da70e8b51bf8a!2sWill%20Bank!5e0!3m2!1spt-BR!2sbr!4v1686101442258!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+    </div>
+  </div>
+  
+
+  <h1 class="tituloContato">Entre em contato comigo</h1>
   <div class="contato-email">
     <img class="mail-img" src="assets/icons/svg/bx-mail-send.svg" alt="icone de e-mail">
     <p>
@@ -39,12 +75,7 @@
     <img class="img-contato" src="assets/images/undraw_contact_us_re_4qqt.svg" alt="desenho de uma mulher preta segurando um envelope enorme. No fundo um desenho de um smartphone e um puxador de telefone antigo">
   </section>
 
-  <section class="sec2">
-    <h2>Endereço:</h2>
-    <p>Rua Eugênio de Medeiros - Pinheiros</p>
-    <p>São Paulo - SP</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.988253390224!2d-46.703252825265075!3d-23.56886536186683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce573c0ad9df95%3A0x7d9da70e8b51bf8a!2sWill%20Bank!5e0!3m2!1spt-BR!2sbr!4v1686101442258!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </section>
+ 
   
   <footer>
     <div>
@@ -56,7 +87,8 @@
       </a>
       <a href="http://" target="_blank"></a>
     </div>
-    <p>Desenvolvido por Ana Rosa Fernandes: - 2023 &copy;</p>
+    <p>Desenvolvido por Ana Rosa Fernandes - 2023 &copy;</p>
   </footer>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
